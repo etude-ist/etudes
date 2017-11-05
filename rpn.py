@@ -1,6 +1,11 @@
-"""Implement an RPN calculator that takes an expression like 19 2.14 + 4.5 2 4.3 / - * which is usually expressed as (19 + 2.14) * (4.5 - 2 / 4.3) and responds with 85.2974."""
+"""
+Implement an RPN calculator that takes an expression like
+19 2.14 + 4.5 2 4.3 / - * which is usually expressed as
+(19 + 2.14) * (4.5 - 2 / 4.3) and responds with 85.2974.
+"""
 
 OPS = set(['+', '-', '*', '/'])
+
 
 def rpc_calc(rpc_exp, ops=OPS):
     stack = []
